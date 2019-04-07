@@ -33,7 +33,9 @@ public class ProductManagerImpl implements ProductManager {
     public void addUsuario(String user){
         usuarios.put(user, new Usuario(user));
     }
-    public void addProducto(Producto producto){
+    public void addProducto(String nombre, int ventas, double precio ){
+
+        Producto producto = new Producto(nombre, precio, ventas);
         this.productos.add(producto);
     }
 

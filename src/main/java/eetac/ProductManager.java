@@ -19,7 +19,7 @@ public interface ProductManager {
     List<Producto> getProductosTop();
 
     void addUsuario (String user);
-    void addProducto (Producto p);
+    void addProducto (String nombre, int ventas, double precio);
     Queue<Pedido> getHistorial();
     Usuario getUsuario(String user);
 

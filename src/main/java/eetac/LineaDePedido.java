@@ -5,7 +5,7 @@ public class LineaDePedido extends Pedido{
     private Producto p;
 
 
-    protected LineaDePedido ( Producto p, int num){
+    public LineaDePedido ( Producto p, int num){
         this.p = p;
         this.num = num;
 
