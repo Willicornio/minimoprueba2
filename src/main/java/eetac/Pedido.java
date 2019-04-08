@@ -14,7 +14,9 @@ public class Pedido {
     public Pedido (List<LineaDePedido> listaPedido){
         this.listaPedido = new LinkedList<LineaDePedido>(listaPedido);
     }
-    public Pedido (){}
+    public Pedido (){
+        this.listaPedido = new LinkedList<LineaDePedido>();
+    }
 
     public List<LineaDePedido> getListaPedido(){
         return this.listaPedido;

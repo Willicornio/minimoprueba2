@@ -25,6 +25,8 @@ public class ProductManagerImplTest {
         pm.addUsuario("Antenita");
         pm.addUsuario("Señora");
 
+
+
         producto1 = new Producto("Arma",100,5);
         producto2 = new Producto("Papel",200,6);
         producto3 = new Producto("Boli",150,3);
@@ -33,6 +35,9 @@ public class ProductManagerImplTest {
         pm.addProducto("papel", 200, 6);
         pm.addProducto("boli", 150, 50);
         pm.addProducto("libreta", 50, 1); /*por causas de la vida está así */
+
+        Pedido pedido = new Pedido();
+        pedido.addProducto(producto1,1);
 
     }
     @After
@@ -67,5 +72,13 @@ public class ProductManagerImplTest {
 
 
 
+    }
+
+    @Test(expected = UsuarioNotFound.class)  //ejemplo de como hacer un test de unexpeción, en este caso el usario "No existe la felicidad", no existe (bastante obvio)
+    // por lo que realizarPedido devuelce la excepción UsuarioNotFound
+    public void testRealizarpedidoperousuarionoesta() throws UsuarioNotFound{
+        Pedido pedido = new Pedido();
+        pedido.addProducto(producto1,1);
+        this.pm.realizarPedido("No existe la felicidad",pedido);
     }
 }

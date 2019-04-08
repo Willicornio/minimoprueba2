@@ -5,11 +5,11 @@
       <change afterPath="$PROJECT_DIR$/../minimobicis/.idea/libraries/Maven__junit_junit_4_9.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../minimobicis/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../minimobicis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba minimo1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eetac/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eetac/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eetac/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eetac/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/LineaDePedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -33,17 +33,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="374">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/ProductManagerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="84" column="102" selection-start-line="84" selection-start-column="102" selection-end-line="84" selection-end-column="102" />
+            <state relative-caret-position="492">
+              <caret line="82" column="128" selection-start-line="82" selection-start-column="128" selection-end-line="82" selection-end-column="128" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#834#835#0" expanded="true" />
@@ -57,10 +60,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Pedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="153">
+              <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/ProductManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,13 +86,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#456#464#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#473#481#0" expanded="true" />
+                <element signature="e#2297#2469#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
+                <element signature="e#2650#2887#0" expanded="true" />
+                <element signature="e#2886#2887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,13 +109,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
                 <element signature="e#1098#1099#0" expanded="true" />
               </folding>
             </state>
@@ -116,19 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Producto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="238">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -155,15 +154,16 @@
         <option value="$PROJECT_DIR$/src/main/java/ProductManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProductManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/eetac/Producto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eetac/Pedido.java" />
         <option value="$PROJECT_DIR$/src/main/java/eetac/LineaDePedido.java" />
         <option value="$PROJECT_DIR$/src/main/java/eetac/Usuario.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eetac/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eetac/ProductManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/ProductManagerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eetac/UsuarioNotFound.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eetac/ProductManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eetac/Pedido.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -241,7 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554719728719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554723656336" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -259,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductManagerImplTest.getProductosOrdenados">
+  <component name="RunManager" selected="JUnit.ProductManagerImplTest.testRealizarpedidoperousuarionoesta">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="prueba minimo1" />
@@ -280,12 +280,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductManagerImplTest.testRealizarpedidoperousuarionoesta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba minimo1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductManagerImplTest" />
+      <option name="METHOD_NAME" value="testRealizarpedidoperousuarionoesta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ProductManagerImplTest.getProductosOrdenados" />
+      <item itemvalue="JUnit.ProductManagerImplTest.testRealizarpedidoperousuarionoesta" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductManagerImplTest.testRealizarpedidoperousuarionoesta" />
         <item itemvalue="JUnit.ProductManagerImplTest.getProductosOrdenados" />
       </list>
     </recent_temporary>
@@ -307,27 +319,43 @@
     <history-entry file="ProductManagerImplTest_getProductosOrdenados - 2019.04.06 at 12h 49m 59s.xml">
       <configuration name="ProductManagerImplTest.getProductosOrdenados" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductManagerImplTest_testRealizarpedidoperousuarionoesta - 2019.04.08 at 13h 14m 06s.xml">
+      <configuration name="ProductManagerImplTest.testRealizarpedidoperousuarionoesta" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductManagerImplTest_testRealizarpedidoperousuarionoesta - 2019.04.08 at 13h 15m 20s.xml">
+      <configuration name="ProductManagerImplTest.testRealizarpedidoperousuarionoesta" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="418" extended-state="0" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.041608877" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.4257975" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.47202796" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.19121814" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.3323782" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.33524355" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -338,6 +366,34 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.05963939" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.19121814" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.33524355" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
@@ -347,50 +403,76 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/LineaDePedido.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ProductManagerImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ProductManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/LineaDePedido.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Producto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/UsuarioNotFound.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Pedido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eetac/ProductManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Pedido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="153">
+          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#456#464#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ProductManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="82" column="128" selection-start-line="82" selection-start-column="128" selection-end-line="82" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#1376#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/LineaDePedido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -401,40 +483,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Producto.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="193">
+          <caret line="122" column="3" lean-forward="true" selection-start-line="122" selection-start-column="3" selection-end-line="122" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/Usuario.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eetac/ProductManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#473#481#0" expanded="true" />
+            <element signature="e#2297#2469#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
+            <element signature="e#2650#2887#0" expanded="true" />
+            <element signature="e#2886#2887#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProductManagerImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
             <element signature="e#1098#1099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/ProductManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="84" column="102" selection-start-line="84" selection-start-column="102" selection-end-line="84" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#1376#1392#0" expanded="true" />
           </folding>
         </state>
       </provider>

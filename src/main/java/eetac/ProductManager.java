@@ -9,7 +9,7 @@ public interface ProductManager {
     List<Producto> getProductosOrdenados();
     //Listado de productos ordenado ascendentemente por precio
 
-    void realizarPedido(String user, Pedido p);
+    void realizarPedido(String user, Pedido p) throws UsuarioNotFound;
     //Realizar un pedido que podrá tener varios productos por un usuario en concreto
 
     void servirPedido();

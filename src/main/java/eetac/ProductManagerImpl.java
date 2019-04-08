@@ -1,15 +1,20 @@
 package eetac;
+import org.apache.log4j.Logger;
+
 import java.util.*;
 
 import java.util.List;
 
-import java.util.concurrent.PriorityBlockingQueue;
-import sun.awt.image.ImageWatched;
 
-import java.util.*;
+/*Para el logger:
+ primero te vas al pom y lo copias, luego te vas a la carpeta del proyecto del profe, copias el archivo
+  log4j (está en source-main-recourses, y lo pegas en tu recurses)
+  Ejemplo más abajo
+  */
 
 public class ProductManagerImpl implements ProductManager {
 
+    final static Logger log = Logger.getLogger(ProductManagerImpl.class.getName()); //-> pones eso
     public static ProductManager instance;
     private List<Producto> productos;
     private LinkedList<Pedido> pedidos;
@@ -30,8 +35,30 @@ public class ProductManagerImpl implements ProductManager {
         usuarios = new HashMap<String, Usuario>();
     }
 
+
+    public void realizarPedido(String user, Pedido p) throws UsuarioNotFound{//---> ejemplo log
+        log.info("Realizar pedido");//Poner info al inicio
+        Usuario u = this.usuarios.get(user);
+        String nombre;
+        nombre = u.getNombre();
+        if (u!=null){
+
+            u.addPedido(p);
+            log.info("Pedido realizado con exito al usuario" + nombre); //--> Ojo con esto, solo ponlo cuando la función es void, si fuese por ejemplo
+            //la función de getUsuario, que devuelve un Usuario, se vuelve loquisimo y no va eso.
+
+        }
+        else{
+            log.error("usuario no encontrado");  // para un error se pone así
+            throw new UsuarioNotFound();
+        }
+    }
     public void addUsuario(String user){
+        log.info("Añadiendo usuario"); //-> eso al principio de cada función.
         usuarios.put(user, new Usuario(user));
+        Usuario u = usuarios.get(user);
+        String nombre= u.getNombre();
+        log.info("añadido el usuario" + nombre);
     }
     public void addProducto(String nombre, int ventas, double precio ){
 
@@ -41,6 +68,8 @@ public class ProductManagerImpl implements ProductManager {
 
 
     public Usuario getUsuario (String user){
+
+        Usuario b = this.usuarios.get(user);
         return this.usuarios.get(user);
     }
 
@@ -73,6 +102,7 @@ public class ProductManagerImpl implements ProductManager {
     }
 
     public LinkedList<Pedido> getPedidosdeUser(String user){
+        log.info("hola");
         Usuario u = this.usuarios.get(user);
         LinkedList<Pedido> listapedidos = new LinkedList<Pedido>();
         for (Pedido pedido: u.consultaPedidos() ) {
@@ -84,20 +114,10 @@ public class ProductManagerImpl implements ProductManager {
         }
         return listapedidos;
 
-        }
-
-     public void realizarPedido(String user, Pedido p){
-        Usuario u = this.usuarios.get(user);
-        if (u!=null){
-            u.addPedido(p);
 
         }
-        else{
-            this.usuarios.put(user, new Usuario(user));
-            u = this.usuarios.get(user);
-            u.addPedido(p);
-        }
-     }
+
+
 
      public void servirPedido(){
          Pedido p = null;
