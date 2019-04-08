@@ -80,7 +80,7 @@ import java.util.List;
                 pm.addProducto(nombre, ventas, precio);//->si fuese el segundo caso, se pondría addProdcuto(p)
                 return Response.status(201).build();
 
-            } catch (Exception e) { //-> tenemos una expeción, siempre asi
+            } catch (Exception e) { //-> tenemos una expeción (se llama así porque no tengo ninguna hecha(se pone la que toque)), siempre asi
                 e.printStackTrace();
                 return Response.status(404).build();//-> solo enviarás el status, nada más, es un post
             }
