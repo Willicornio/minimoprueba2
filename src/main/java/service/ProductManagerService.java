@@ -31,65 +31,62 @@ import java.util.List;
     @Path("/pedidos")
     public class ProductManagerService {
         final static Logger log = Logger.getLogger(ProductManagerService.class.getName());
-        private ProductManager pm;
+        private ProductManager pm; //La façada
 
         public ProductManagerService() {
-            this.pm = ProductManagerImpl.getInstance();
+            this.pm = ProductManagerImpl.getInstance(); //instancia de la implentación
         }
 
+//ejemplo para un get:
 
         @GET
         @ApiOperation(value = "Lista productos")
+        //posibles respuestas que darás :
         @ApiResponses(value = {
                 @ApiResponse(code = 201, message = "exito")
 
         })
+        //camino url:
         @Path("/{productoorden}")
+        //siempre es así:
         @Produces(MediaType.APPLICATION_JSON)
-        public Response productosOrdenados() {
-            List<Producto> listaproducto = new ArrayList<>();
-            listaproducto = this.pm.getProductosOrdenados();
-            GenericEntity<List<Producto>> entity = new GenericEntity<List<Producto>>(listaproducto) {
+        public Response productosOrdenados() {  //->Te inventas una respuesta llamada así, como es un get no pide nada
+            List<Producto> listaproducto = new ArrayList<>();  //->creas lista
+            listaproducto = this.pm.getProductosOrdenados(); // -> copias la lista ordenada en tu lista
+            GenericEntity<List<Producto>> entity = new GenericEntity<List<Producto>>(listaproducto) {//->esto siempre es así, no sé porque
             };
-            return Response.status(201).entity(entity).build();
+            return Response.status(201).entity(entity).build(); //-> haces un build con la respuesta y la lista
         }
 
-
-
-        @POST
-        @ApiOperation(value = "Realizar pedido")
-        @ApiResponses(value = {
-                @ApiResponse(code = 201, message = "exito")
-
-        })
-        @Path("/{realizarpedido}")
-        @Produces(MediaType.APPLICATION_JSON)
-        public Response realizarPedido(@PathParam("user") String user, Pedido p){
-
-            pm.realizarPedido(user, p);
-            return Response.status(201).build();
-
-        }
-
+//ejemplo post:
         @POST
         @ApiOperation(value = "Agregar prodcuto")
         @ApiResponses(value = {
-                @ApiResponse(code = 201, message = "exito")
+                @ApiResponse(code = 201, message = "exito"),
+                @ApiResponse(code = 404, message = "fatal") //En este caso tenemos 2 respuestas
 
         })
         @Path("/{agregarpedido}")
-        @Produces(MediaType.APPLICATION_JSON)
-        public Response agregarProducto( Producto p){
-            String nombre = p.getNombre();
-            double precio = p.getPrecio();
-            int ventas = p.getNumeroVentas();
+        @Produces(MediaType.APPLICATION_JSON)  //como un get hasta aquí
+        //El post necesita que le des algo, en este caso un producto p
+        public Response agregarProducto(Producto p) {
+            try {
+                String nombre = p.getNombre();//se sacan los parametros que tiene el objeto p, ojo, eso se hace porque la función addProducto es :
+                // public void addProducto (String nombre, double precio, int numerovntas{}, si fuese public void addProducto (Producto p) {}
+                //no haria falta coger los valores
+                double precio = p.getPrecio();
+                int ventas = p.getNumeroVentas();
 
-            pm.addProducto(nombre, ventas, precio);
-            return Response.status(201).build();
+                pm.addProducto(nombre, ventas, precio);//->si fuese el segundo caso, se pondría addProdcuto(p)
+                return Response.status(201).build();
+
+            } catch (Exception e) { //-> tenemos una expeción, siempre asi
+                e.printStackTrace();
+                return Response.status(404).build();//-> solo enviarás el status, nada más, es un post
+            }
+
 
         }
-
-
     }
 
 
